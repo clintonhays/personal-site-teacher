@@ -1,0 +1,87 @@
+//
+// - - - - - - - - - - Grid Layout - - - - - - - - - - //
+//
+
+/* prettier-ignore */
+.grid-container {
+	background: whitesmoke;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 1fr;
+	gap: 1em;
+	grid-template-areas: 'char-name char-name sprite' 
+						 'char-info char-info char-info'
+						 'stats ac-hp proficiencies'
+						 'stats ac-hp proficiencies'
+						 'stats ac-hp proficiencies'
+						 'stats ac-hp traits-spells-feats'
+						 'stats spellcasting traits-spells-feats'
+						 'stats spellcasting traits-spells-feats'
+						 'stats weapons traits-spells-feats'
+						 'stats weapons traits-spells-feats'
+						 'stats weapons traits-spells-feats'
+						 'stats equipment traits-spells-feats'
+						 'stats equipment traits-spells-feats';
+}
+
+.character-name {
+	grid-area: char-name;
+	background: hsl(20, 50%, 50%);
+	border-radius: 10px;
+}
+
+.sprite {
+	grid-area: sprite;
+	background-color: hsl(30, 50%, 50%);
+	border-radius: 10px;
+}
+
+.character-info {
+	grid-area: char-info;
+	background-color: hsl(40, 50%, 50%);
+	border-radius: 10px;
+	padding: 10px 20px;
+}
+
+.stats {
+	grid-area: stats;
+	background-color: hsl(50, 50%, 50%);
+	border-radius: 10px;
+	padding: 10px 20px;
+}
+
+.ac-hp {
+	grid-area: ac-hp;
+	background-color: hsl(60, 50%, 50%);
+	border-radius: 10px;
+}
+
+.spellcasting {
+	grid-area: spellcasting;
+	background-color: hsl(70, 50%, 50%);
+	border-radius: 10px;
+}
+
+.weapons {
+	grid-area: weapons;
+	background-color: hsl(80, 50%, 50%);
+	border-radius: 10px;
+}
+
+.equipment {
+	grid-area: equipment;
+	background-color: hsl(90, 50%, 50%);
+	border-radius: 10px;
+}
+
+.proficiencies {
+	grid-area: proficiencies;
+	background-color: hsl(100, 50%, 50%);
+	border-radius: 10px;
+}
+
+.traits-spells-feats {
+	grid-area: traits-spells-feats;
+	background-color: hsl(110, 50%, 50%);
+	border-radius: 10px;
+}

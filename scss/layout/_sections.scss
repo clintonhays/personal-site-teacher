@@ -1,0 +1,57 @@
+//
+// - - - - - - - - - - Section Layout - - - - - - - - - - //
+//
+
+.character-name {
+	input {
+		background-color: inherit;
+		border: none;
+	}
+}
+
+.character-info {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	h2 {
+		text-align: center;
+		width: 100%;
+		margin-bottom: 0;
+	}
+
+	input:nth-child(-n + 3) {
+		width: 30%;
+		margin-bottom: 1em;
+		margin-top: 1em;
+		font-size: 1.5em;
+		background-color: inherit;
+		border: none;
+		border-bottom: 2px solid black;
+
+		&:focus {
+			outline: none;
+
+			&::placeholder {
+				color: transparent;
+			}
+		}
+	}
+
+	input:nth-child(n + 4) {
+		width: 30%;
+		margin-bottom: 1em;
+		font-size: 1.5em;
+		background-color: inherit;
+		border: none;
+		border-bottom: 2px solid black;
+
+		&:focus {
+			outline: none;
+
+			&::placeholder {
+				color: transparent;
+			}
+		}
+	}
+}
