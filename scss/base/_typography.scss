@@ -1,6 +1,6 @@
-//									 //
-// - - - - - Main Headings - - - - - //
-//									 //
+//									 					 //
+// - - - - - - - - - - Main Headings - - - - - - - - - - //
+//									 					 //
 
 header {
 	h1 {
@@ -13,7 +13,7 @@ header {
 	}
 	p {
 		margin-top: 0;
-		margin-bottom: 8em;
+		margin-bottom: 7em;
 		text-align: right;
 		padding-right: .7em;
 		font-size: 1.5em;
@@ -27,8 +27,43 @@ header {
 
 h2 {
 	text-align: center;
+	font-size: 2.5em;
+	color: white;
+	margin-bottom: 15px;
 }
 
 h3 {
 	text-align: center;
+}
+
+//									 				  //
+// - - - - - - - - - - Pull Quote - - - - - - - - - - //
+//									 				  //
+
+.pullQuote {
+	position: relative;
+	width: 70%;
+	margin: 0 auto;
+	font-size: 2.5em;
+	margin-bottom: 4em;
+
+	&::before {
+		content: open-quote;
+		position: absolute;
+		top: -20px;
+		left: -40px;
+		color: white;
+		opacity: .5;
+		font-size: 2em;
+	}
+
+	&::after {
+		content: close-quote;
+		position: absolute;
+		bottom: -50px;
+		right: 65px;
+		color: white;
+		opacity: .5;
+		font-size: 2em;
+	}
 }
