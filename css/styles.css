@@ -339,12 +339,11 @@ template {
 
 body {
   background-color: lightgray;
-  padding: 10px 10px;
+  padding: 0px 10px;
 }
 
 h1 {
   text-align: center;
-  margin-top: 5%;
   font-size: 4em;
   font-family: sans-serif;
 }
@@ -357,204 +356,22 @@ h3 {
   text-align: center;
 }
 
-.history {
-  background-color: orange;
-  border-radius: 25px;
-  max-width: 1000px;
-  padding: 1.5em;
-  margin: auto;
-  font-size: 1.25em;
-}
-
-.character-name input {
-  background-color: inherit;
-  border: none;
-}
-
-.character-info {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.character-info h2 {
+header nav ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 10px;
   text-align: center;
-  width: 100%;
-  margin-bottom: 0;
-}
-
-.character-info input:nth-child(-n + 3) {
-  width: 30%;
-  margin-bottom: 1em;
-  margin-top: 1em;
   font-size: 1.5em;
-  background-color: inherit;
-  border: none;
-  border-bottom: 2px solid black;
-}
-
-.character-info input:nth-child(-n + 3):focus {
-  outline: none;
-}
-
-.character-info input:nth-child(-n + 3):focus::placeholder {
-  color: transparent;
-}
-
-.character-info input:nth-child(n + 4) {
-  width: 30%;
-  margin-bottom: 1em;
-  font-size: 1.5em;
-  background-color: inherit;
-  border: none;
-  border-bottom: 2px solid black;
-}
-
-.character-info input:nth-child(n + 4):focus {
-  outline: none;
-}
-
-.character-info input:nth-child(n + 4):focus::placeholder {
-  color: transparent;
-}
-
-/* prettier-ignore */
-.grid-container {
-  background: whitesmoke;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  gap: 1em;
-  grid-template-areas: 'char-name char-name sprite'  'char-info char-info char-info' 'stats ac-hp proficiencies' 'stats ac-hp proficiencies' 'stats ac-hp proficiencies' 'stats ac-hp traits-spells-feats' 'stats spellcasting traits-spells-feats' 'stats spellcasting traits-spells-feats' 'stats weapons traits-spells-feats' 'stats weapons traits-spells-feats' 'stats weapons traits-spells-feats' 'stats equipment traits-spells-feats' 'stats equipment traits-spells-feats';
-}
-
-.character-name {
-  grid-area: char-name;
-  background: #bf6a40;
-  border-radius: 10px;
-}
-
-.sprite {
-  grid-area: sprite;
-  background-color: #bf8040;
-  border-radius: 10px;
-}
-
-.character-info {
-  grid-area: char-info;
-  background-color: #bf9540;
-  border-radius: 10px;
-  padding: 10px 20px;
-}
-
-.stats {
-  grid-area: stats;
-  background-color: #bfaa40;
-  border-radius: 10px;
-  padding: 10px 20px;
-}
-
-.ac-hp {
-  grid-area: ac-hp;
-  background-color: #bfbf40;
-  border-radius: 10px;
-}
-
-.spellcasting {
-  grid-area: spellcasting;
-  background-color: #aabf40;
-  border-radius: 10px;
-}
-
-.weapons {
-  grid-area: weapons;
-  background-color: #95bf40;
-  border-radius: 10px;
-}
-
-.equipment {
-  grid-area: equipment;
-  background-color: #80bf40;
-  border-radius: 10px;
-}
-
-.proficiencies {
-  grid-area: proficiencies;
-  background-color: #6abf40;
-  border-radius: 10px;
-}
-
-.traits-spells-feats {
-  grid-area: traits-spells-feats;
-  background-color: #55bf40;
-  border-radius: 10px;
-}
-
-.stats {
-  display: grid;
-  grid-template-columns: 100px .5fr 1fr;
-  gap: 1.5em;
-}
-
-.stats .bonus {
-  width: 5em;
-  height: 5em;
-  text-align: center;
-  clip-path: polygon(25% 0, 100% 0, 100% 75%, 75% 100%, 0 100%, 0 25%);
-  border: none;
-}
-
-.stats .bonus:focus {
-  outline: none;
-}
-
-.stats .savingThrows .baseSave {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-evenly;
 }
 
-.stats .savingThrows .baseSave input {
-  width: 2em;
-  height: 2em;
-  text-align: center;
-}
-
-.stats .savingThrows .skillSave {
-  display: grid;
-  grid-template-columns: repeat(2, 90px 2em);
-}
-
-.stats .savingThrows .skillSave input {
-  width: 2em;
-  height: 2em;
-}
-
-img {
-  width: 300px;
-  border-radius: 10%;
-}
-
-#card {
-  position: relative;
-  display: none;
-}
-
-#card img {
-  filter: brightness(80%);
-}
-
-#card h2 {
-  position: absolute;
-  top: 220px;
-  text-align: center;
-  width: 100%;
-  font-size: 2.5em;
-  font-family: sans-serif;
+header nav ul a {
+  text-decoration: none;
   color: white;
 }
 
-.cocktailPic {
-  width: 400px;
+header nav ul a:visited {
+  color: white;
 }
 /*# sourceMappingURL=styles.css.map */
