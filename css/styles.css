@@ -380,45 +380,49 @@ h3 {
   margin: 0 auto;
   font-size: 2.5em;
   margin-bottom: 4em;
+  border-left: 5px solid white;
 }
 
-.pullQuote::before {
+.pullQuote blockquote {
+  font-family: Arial, Helvetica, sans-serif;
+  quotes: '"';
+  margin-left: 15px;
+  font-style: italic;
+  line-height: 1.25em;
+}
+
+.pullQuote blockquote::before {
   content: open-quote;
-  position: absolute;
-  top: -20px;
-  left: -40px;
   color: white;
   opacity: .5;
   font-size: 2em;
+  padding-right: 10px;
 }
 
-.pullQuote::after {
-  content: close-quote;
-  position: absolute;
-  bottom: -50px;
-  right: 65px;
-  color: white;
-  opacity: .5;
-  font-size: 2em;
+#about {
+  margin-bottom: 8em;
 }
 
 .aboutCopy {
   width: 80%;
   background-color: #fff;
-  margin: auto;
+  margin: 0 auto;
   padding: 15px;
   border-radius: 5px;
+  text-align: left;
 }
 
 .aboutImages {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  text-align: center;
 }
 
 .aboutImages img {
   width: 100px;
-  padding: 10px 10px 10px 0px;
+  padding: 10px 10px 10px 10px;
+}
+
+#experience {
+  margin-bottom: 8em;
 }
 
 .experienceCopy {
@@ -451,34 +455,33 @@ h3 {
   bottom: 0;
   width: 5px;
   border-radius: 5px;
-  background: black;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.4) 30%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.6) 60%, rgba(0, 0, 0, 0.4) 70%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.2) 90%, rgba(0, 0, 0, 0.1) 100%);
+  background: #fff;
   left: 50%;
 }
 
-.expContainer {
+.timeline .expContainer {
   position: relative;
   padding: 5px 15px;
   width: 50%;
 }
 
-.expContainer::after {
+.timeline .expContainer::after {
   content: '';
   position: absolute;
   top: 1.5em;
-  right: -14px;
+  right: -13px;
   width: 15px;
   height: 15px;
-  background-color: dodgerblue;
+  background-color: lightgrey;
   border-radius: 50%;
-  border: 3px solid #6b6b6b;
+  border: 3px solid #fff;
 }
 
-.left {
+.timeline .left {
   left: 0;
 }
 
-.left::before {
+.timeline .left::before {
   content: '';
   height: 0px;
   width: 0px;
@@ -490,16 +493,16 @@ h3 {
   border-color: transparent transparent transparent #fff;
 }
 
-.right {
+.timeline .right {
   left: 50%;
-  margin-left: 8px;
+  margin-left: 6px;
 }
 
-.right::after {
-  left: -16px;
+.timeline .right::after {
+  left: -14px;
 }
 
-.right::before {
+.timeline .right::before {
   content: '';
   height: 0px;
   width: 0px;

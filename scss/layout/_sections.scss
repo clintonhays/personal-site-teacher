@@ -3,24 +3,34 @@
 //
 
 //
+// - - - - - - - - - - Header - - - - - - - - - - //
+//
+
+//
 // - - - - - - - - - - About Me - - - - - - - - - - //
 //
+
+#about {
+	margin-bottom: 8em;
+}
 
 .aboutCopy {
 	width: 80%;
 	background-color: #fff;
-	margin: auto;
+	margin: 0 auto;
 	padding: 15px;
 	border-radius: 5px;
+	text-align: left;
 }
 
 .aboutImages {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
+	// display: flex;
+	// justify-content: center;
+	// flex-wrap: wrap;
+	text-align: center;
 	img {
 		width: 100px;
-		padding: 10px 10px 10px 0px;
+		padding: 10px 10px 10px 10px;
 	}
 }
 
@@ -28,6 +38,9 @@
 // - - - - - - - - - - Experience - - - - - - - - - - //
 //
 
+#experience {
+	margin-bottom: 8em;
+}
 .experienceCopy {
 	width: 80%;
 	background-color: #fff;
@@ -49,84 +62,84 @@
 		font-size: .8em;
 		border-radius: 5px;
 	}
-}
-
-.timeline::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	width: 5px;
-	border-radius: 5px;
-	background: rgb(0, 0, 0);
-	background: linear-gradient(
-		0deg,
-		rgba(0, 0, 0, 0.1) 0%,
-		rgba(0, 0, 0, 0.2) 10%,
-		rgba(0, 0, 0, 0.3) 20%,
-		rgba(0, 0, 0, 0.4) 30%,
-		rgba(0, 0, 0, 0.6) 40%,
-		rgba(0, 0, 0, 0.8) 50%,
-		rgba(0, 0, 0, 0.6) 60%,
-		rgba(0, 0, 0, 0.4) 70%,
-		rgba(0, 0, 0, 0.3) 80%,
-		rgba(0, 0, 0, 0.2) 90%,
-		rgba(0, 0, 0, 0.1) 100%
-	);
-	left: 50%;
-}
-
-.expContainer {
-	position: relative;
-	padding: 5px 15px;
-	width: 50%;
-
-	&::after {
-		content: '';
-		position: absolute;
-		top: 1.5em;
-		right: -14px;
-		width: 15px;
-		height: 15px;
-		background-color: dodgerblue;
-		border-radius: 50%;
-		border: 3px solid rgb(107, 107, 107);
-	}
-}
-
-.left {
-	left: 0;
 
 	&::before {
 		content: '';
-		height: 0px;
-		width: 0px;
 		position: absolute;
-		top: 26px;
-		right: 0px;
-		border: 8px solid white;
-		border-width: 8px;
-		border-color: transparent transparent transparent #fff;
+		top: 0;
+		bottom: 0;
+		width: 5px;
+		border-radius: 5px;
+		background: #fff;
+		// background: linear-gradient(
+		// 	0deg,
+		// 	rgba(0, 0, 0, 0.1) 0%,
+		// 	rgba(0, 0, 0, 0.2) 10%,
+		// 	rgba(0, 0, 0, 0.3) 20%,
+		// 	rgba(0, 0, 0, 0.4) 30%,
+		// 	rgba(0, 0, 0, 0.6) 40%,
+		// 	rgba(0, 0, 0, 0.8) 50%,
+		// 	rgba(0, 0, 0, 0.6) 60%,
+		// 	rgba(0, 0, 0, 0.4) 70%,
+		// 	rgba(0, 0, 0, 0.3) 80%,
+		// 	rgba(0, 0, 0, 0.2) 90%,
+		// 	rgba(0, 0, 0, 0.1) 100%
+		// );
+		left: 50%;
 	}
-}
 
-.right {
-	left: 50%;
-	margin-left: 8px;
+	.expContainer {
+		position: relative;
+		padding: 5px 15px;
+		width: 50%;
 
-	&::after {
-		left: -16px;
+		&::after {
+			content: '';
+			position: absolute;
+			top: 1.5em;
+			right: -13px;
+			width: 15px;
+			height: 15px;
+			background-color: lightgrey;
+			border-radius: 50%;
+			border: 3px solid #fff;
+		}
 	}
 
-	&::before {
-		content: '';
-		height: 0px;
-		width: 0px;
-		position: absolute;
-		top: 26px;
-		left: -1px;
-		border: 8px solid white;
-		border-width: 8px;
-		border-color: transparent #fff transparent transparent;
+	.left {
+		left: 0;
+
+		&::before {
+			content: '';
+			height: 0px;
+			width: 0px;
+			position: absolute;
+			top: 26px;
+			right: 0px;
+			border: 8px solid white;
+			border-width: 8px;
+			border-color: transparent transparent transparent #fff;
+		}
+	}
+
+	.right {
+		left: 50%;
+		margin-left: 6px;
+
+		&::after {
+			left: -14px;
+		}
+
+		&::before {
+			content: '';
+			height: 0px;
+			width: 0px;
+			position: absolute;
+			top: 26px;
+			left: -1px;
+			border: 8px solid white;
+			border-width: 8px;
+			border-color: transparent #fff transparent transparent;
+		}
 	}
 }
