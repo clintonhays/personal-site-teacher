@@ -1,3 +1,1 @@
-let timeLineBubble = window.getComputedStyle(document.querySelector('.expContainer'), '::before');
-
-timeLineBubble;
+const openModalButton = document.querySelectorAll('[data-modal-target]');

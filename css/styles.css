@@ -463,6 +463,15 @@ header {
   margin-bottom: 0;
 }
 
+.timeline .content .seeMore {
+  background: none;
+  outline: none;
+  border: none;
+  margin: none;
+  padding: 0;
+  cursor: pointer;
+}
+
 .timeline::before {
   content: '';
   position: absolute;
@@ -527,6 +536,67 @@ header {
   border: 8px solid white;
   border-width: 8px;
   border-color: transparent #fff transparent transparent;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 5px;
+  z-index: 10;
+  background-color: white;
+  width: 500px;
+  max-width: 80%;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal .modalHeader {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.modal .modalHeader .modalTitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal .modalHeader .closeButton {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal .modalBody {
+  padding: 10px 15px;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
 }
 
 header nav ul {
