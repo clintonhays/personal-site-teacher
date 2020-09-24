@@ -12,6 +12,7 @@ header {
 		url("../../img/cup-of-pencils-xxsmall.png") no-repeat center;
 	background-size: cover;
 	height: 500px;
+	margin-bottom: 13em;
 }
 
 //
@@ -19,7 +20,14 @@ header {
 //
 
 #about {
-	margin-bottom: 8em;
+	margin-bottom: 13em;
+}
+
+.aboutImages {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
 }
 
 .aboutCopy {
@@ -29,14 +37,6 @@ header {
 	padding: 15px;
 	border-radius: 5px;
 	text-align: left;
-}
-
-.aboutImages {
-	text-align: center;
-	img {
-		width: 150px;
-		padding: 10px 10px 10px 10px;
-	}
 }
 
 //
@@ -118,7 +118,7 @@ header {
 			content: '';
 			position: absolute;
 			top: 1.5em;
-			right: -13px;
+			right: -10px;
 			width: 15px;
 			height: 15px;
 			background-color: lightgrey;
@@ -148,7 +148,7 @@ header {
 		margin-left: 6px;
 
 		&::after {
-			left: -14px;
+			left: -11px;
 		}
 
 		&::before {
@@ -228,4 +228,36 @@ header {
 		opacity: 1;
 		pointer-events: all;
 	}
+}
+
+//
+// - - - - - - - - - - Experience - - - - - - - - - - //
+//
+
+#contact {
+	border-top: 1px solid white;
+	padding-top: 10px;
+}
+
+.contactInfo {
+	display: flex;
+	justify-content: space-evenly;
+
+	.email {
+		display: flex;
+		p:first-child {
+			padding-right: 5px;
+		}
+	}
+
+	.phone {
+		display: flex;
+		p:first-child {
+			padding-right: 5px;
+		}
+	}
+}
+
+.social {
+	text-align: center;
 }
