@@ -1,8 +1,8 @@
-//									 					 //
+//
 // - - - - - - - - - - Main Headings - - - - - - - - - - //
-//									 					 //
+//
 
-header {
+.nameBanner {
 	h1 {
 		text-align: center;
 		font-size: 4em;
@@ -13,9 +13,8 @@ header {
 	}
 	p {
 		margin-top: 0;
-		margin-bottom: 7em;
 		text-align: right;
-		padding-right: .7em;
+		margin-right: 3%;
 		font-size: 1.5em;
 		font-weight: 900;
 	}

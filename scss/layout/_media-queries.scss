@@ -1,0 +1,63 @@
+//
+// - - - - - - - - - - Media Queries - - - - - - - - - - //
+//
+
+@media (min-width: $sm) {
+	.nameBanner {
+		p {
+			margin-right: 19%;
+		}
+	}
+
+	.aboutImages {
+		flex-direction: row;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+
+@media (min-width: $md) {
+	.nameBanner {
+		p {
+			margin-right: 24%;
+		}
+	}
+}
+
+@media (min-width: $lg) {
+	.nameBanner {
+		p {
+			margin-right: 26.5%;
+		}
+	}
+
+	.aboutImages {
+		width: 60%;
+	}
+}
+
+@media (min-width: $xl) {
+	.nameBanner {
+		p {
+			margin-right: 30.5%;
+		}
+	}
+
+	.aboutImages {
+		width: 60%;
+	}
+}
+
+@media (min-width: $xxl) {
+	.nameBanner {
+		p {
+			margin-right: 35%;
+		}
+	}
+
+	.aboutImages {
+		width: 60%;
+	}
+}

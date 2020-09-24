@@ -347,7 +347,7 @@ body {
   background-color: lightgray;
 }
 
-header h1 {
+.nameBanner h1 {
   text-align: center;
   font-size: 4em;
   font-family: sans-serif;
@@ -356,11 +356,10 @@ header h1 {
   margin-top: 2.5em;
 }
 
-header p {
+.nameBanner p {
   margin-top: 0;
-  margin-bottom: 7em;
   text-align: right;
-  padding-right: .7em;
+  margin-right: 3%;
   font-size: 1.5em;
   font-weight: 900;
 }
@@ -426,6 +425,7 @@ header {
   padding: 15px;
   border-radius: 5px;
   text-align: left;
+  line-height: 1.4em;
 }
 
 #experience {
@@ -439,6 +439,7 @@ header {
   margin-bottom: 1.5em;
   padding: 15px;
   border-radius: 5px;
+  line-height: 1.4em;
 }
 
 .timeline {
@@ -451,8 +452,9 @@ header {
 .timeline .content {
   background-color: #fff;
   padding: 5px;
-  font-size: .8em;
   border-radius: 5px;
+  text-align: center;
+  line-height: 1.8em;
 }
 
 .timeline .content p {
@@ -465,12 +467,14 @@ header {
 }
 
 .timeline .content .seeMore {
+  width: 100%;
   background: none;
   outline: none;
   border: none;
   margin: none;
   padding: 0;
   cursor: pointer;
+  text-decoration: underline;
 }
 
 .timeline::before {
@@ -581,6 +585,7 @@ header {
 
 .modal .modalBody {
   padding: 10px 15px;
+  line-height: 2em;
 }
 
 #overlay {
@@ -647,6 +652,52 @@ header nav ul a {
 
 header nav ul a:visited {
   color: white;
+}
+
+@media (min-width: 768px) {
+  .nameBanner p {
+    margin-right: 19%;
+  }
+  .aboutImages {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 900px) {
+  .nameBanner p {
+    margin-right: 24%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nameBanner p {
+    margin-right: 26.5%;
+  }
+  .aboutImages {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nameBanner p {
+    margin-right: 30.5%;
+  }
+  .aboutImages {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1535px) {
+  .nameBanner p {
+    margin-right: 35%;
+  }
+  .aboutImages {
+    width: 60%;
+  }
 }
 
 .card {
