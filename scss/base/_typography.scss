@@ -5,11 +5,11 @@
 .nameBanner {
 	h1 {
 		text-align: center;
-		font-size: 4em;
-		font-family: sans-serif;
+		font-size: 3.5em;
 		color: white;
 		margin-bottom: 0;
 		margin-top: 2.5em;
+		padding-right: 15px;
 	}
 	p {
 		margin-top: 0;
@@ -48,11 +48,16 @@ h3 {
 	border-left: 5px solid white;
 
 	blockquote {
-		font-family: Arial, Helvetica, sans-serif;
+		font-family: 'Raleway', sans-serif;
 		quotes: '"';
 		margin-left: 15px;
 		font-style: italic;
 		line-height: 1.25em;
+
+		span {
+			font-size: 2em;
+			font-weight: 700;
+		}
 
 		&::before {
 			content: open-quote;

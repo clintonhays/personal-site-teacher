@@ -36,6 +36,10 @@
 	.aboutImages {
 		width: 60%;
 	}
+
+	.contactInfo {
+		flex-direction: row;
+	}
 }
 
 @media (min-width: $xl) {
@@ -51,10 +55,22 @@
 }
 
 @media (min-width: $xxl) {
+	header {
+		margin-bottom: 25em;
+	}
 	.nameBanner {
 		p {
-			margin-right: 35%;
+			margin-right: 33.5%;
 		}
+	}
+
+	.pullQuote {
+		width: 45%;
+		margin-bottom: 10em;
+	}
+
+	#about {
+		margin-bottom: 20em;
 	}
 
 	.aboutImages {

@@ -238,26 +238,50 @@ header {
 }
 
 //
-// - - - - - - - - - - Experience - - - - - - - - - - //
+// - - - - - - - - - - Education - - - - - - - - - - //
+//
+
+.education,
+.skills,
+.certifications {
+	background-color: white;
+	width: 80%;
+	border-radius: 5px;
+	margin: 0 auto;
+	padding: 5px;
+
+	ul {
+		list-style-type: square;
+		line-height: 1.6em;
+	}
+}
+
+.skills {
+	margin-bottom: 4em;
+}
+
+//
+// - - - - - - - - - - Contact - - - - - - - - - - //
 //
 
 #contact {
 	border-top: 1px solid white;
 	padding-top: 10px;
+
+	h3 {
+		color: white;
+	}
 }
 
 .contactInfo {
 	display: flex;
+	flex-direction: column;
 	justify-content: space-evenly;
+	align-items: center;
 
-	.email {
-		display: flex;
-		p:first-child {
-			padding-right: 5px;
-		}
-	}
-
-	.phone {
+	.email,
+	.phone,
+	.altPhone {
 		display: flex;
 		p:first-child {
 			padding-right: 5px;
@@ -268,7 +292,3 @@ header {
 .social {
 	text-align: center;
 }
-
-//
-// - - - - - - - - - - Education - - - - - - - - - - //
-//

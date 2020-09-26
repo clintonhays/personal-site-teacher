@@ -345,15 +345,16 @@ template {
 
 body {
   background-color: lightgray;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .nameBanner h1 {
   text-align: center;
-  font-size: 4em;
-  font-family: sans-serif;
+  font-size: 3.5em;
   color: white;
   margin-bottom: 0;
   margin-top: 2.5em;
+  padding-right: 15px;
 }
 
 .nameBanner p {
@@ -385,11 +386,16 @@ h3 {
 }
 
 .pullQuote blockquote {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Raleway', sans-serif;
   quotes: '"';
   margin-left: 15px;
   font-style: italic;
   line-height: 1.25em;
+}
+
+.pullQuote blockquote span {
+  font-size: 2em;
+  font-weight: 700;
 }
 
 .pullQuote blockquote::before {
@@ -605,29 +611,52 @@ header {
   pointer-events: all;
 }
 
+.education,
+.skills,
+.certifications {
+  background-color: white;
+  width: 80%;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.education ul,
+.skills ul,
+.certifications ul {
+  list-style-type: square;
+  line-height: 1.6em;
+}
+
+.skills {
+  margin-bottom: 4em;
+}
+
 #contact {
   border-top: 1px solid white;
   padding-top: 10px;
 }
 
+#contact h3 {
+  color: white;
+}
+
 .contactInfo {
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
+  align-items: center;
 }
 
-.contactInfo .email {
+.contactInfo .email,
+.contactInfo .phone,
+.contactInfo .altPhone {
   display: flex;
 }
 
-.contactInfo .email p:first-child {
-  padding-right: 5px;
-}
-
-.contactInfo .phone {
-  display: flex;
-}
-
-.contactInfo .phone p:first-child {
+.contactInfo .email p:first-child,
+.contactInfo .phone p:first-child,
+.contactInfo .altPhone p:first-child {
   padding-right: 5px;
 }
 
@@ -680,6 +709,9 @@ header nav ul a:visited {
   .aboutImages {
     width: 60%;
   }
+  .contactInfo {
+    flex-direction: row;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -692,8 +724,18 @@ header nav ul a:visited {
 }
 
 @media (min-width: 1535px) {
+  header {
+    margin-bottom: 25em;
+  }
   .nameBanner p {
-    margin-right: 35%;
+    margin-right: 33.5%;
+  }
+  .pullQuote {
+    width: 45%;
+    margin-bottom: 10em;
+  }
+  #about {
+    margin-bottom: 20em;
   }
   .aboutImages {
     width: 60%;
